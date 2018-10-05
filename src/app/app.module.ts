@@ -11,6 +11,10 @@ import { UbicationsComponent } from './pages/ubications/ubications.component';
 import { NoFoundPagesComponent } from './pages/no-found-pages/no-found-pages.component';
 import { HeroesComponent } from './pages/heroes/heroes.component';
 import { DesboComponent } from './pages/desbo/desbo.component';
+import { PagesComponent } from './pages/pages.component';
+import { FooterComponent } from './pages/footer/footer.component';
+import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
+import { SliderComponent } from './pages/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { DesboComponent } from './pages/desbo/desbo.component';
     UbicationsComponent,
     NoFoundPagesComponent,
     HeroesComponent,
-    DesboComponent
+    DesboComponent,
+    PagesComponent,
+    FooterComponent,
+    NavBarComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule
