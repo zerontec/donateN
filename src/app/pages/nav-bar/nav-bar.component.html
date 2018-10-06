@@ -1,3 +1,66 @@
-<p>
-  nav-bar works!
-</p>
+<header>
+  <div class="top-bar">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 address">
+                  <i class="ti-location-pin"></i> {{_servicio.info.ciudad}}
+              </div>
+              <div class="col-sm-6 social">
+                  <ul>
+                      <li><a target="_blank" [href]="_servicio.info.facebook"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                      <li><a target="_blank" [href]="_servicio.info.twitter"><i class="fa fa-linkedin-square"></i></a></li>
+                      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                  Donate<span>Life</span>
+              </a>
+              <p>Puede Llamarnos <b>{{_servicio.info.telefono}}</b></p>
+          </div>
+          <div class="collapse navbar-collapse navbar-main-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="#" routerLink="/">Home</a>
+                  </li>
+                  <li>
+                      <a href="#" routerLink="/heroes">Lista de Heroes</a>
+                  </li>
+                 
+                  <li>
+                      <a href="#" routerLink='/ubication' >Centros </a>
+                  </li>
+                  <li  *ngIf="isLogin">
+                 <a href="#" (click)= "onClickLogout()">Salir</a>
+                      </li>
+                  <li >
+
+                    <a  *ngIf="isLogin">{{nombreUser}}</a>
+                  </li>
+                  <li  *ngIf="isLogin">
+                    <img src="{{fotoUser}}" class="rounded-circle">
+                    <span class="badge pill badge-secondary">{{emailUser}}</span>
+                  
+                   <li *ngIf="!isLogin">
+                      <a href="#" class="btn-default" routerLink="/login">Login</a>
+                  </li>
+                  <li *ngIf="!isLogin">
+                      <a href="#" class="btn-default" routerLink="/register">Registrate</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+

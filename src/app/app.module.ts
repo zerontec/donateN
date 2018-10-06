@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 
 //modulos
 
@@ -23,6 +24,10 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 import { SliderComponent } from './pages/slider/slider.component';
 import { environment } from '../environments/environment';
+import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
+/*import {FlashMessagesModule} from 'angular2-flash-messages';
+import {FlashMessagesService} from 'angular2-flash-messages';  colocar luego mensajes */
 
 @NgModule({
   declarations: [
@@ -42,10 +47,12 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

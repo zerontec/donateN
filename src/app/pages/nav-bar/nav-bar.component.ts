@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {InfoPaginaService} from '../../services/info-pagina.service';
+
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _servicio: InfoPaginaService) { }
 
   ngOnInit() {
   }
