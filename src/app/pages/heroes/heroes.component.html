@@ -1,3 +1,69 @@
-<p>
-  heroes works!
-</p>
+<div class="intro">
+    <div class="clear"></div>
+    <div id="page-content">
+     
+        <hr>
+        <hr>
+        <div class="container">
+          <div class="jumbotron">
+              <h2>Lista de Heroes </h2> 
+              <h2>Encuentra tu posible donador agregalo a tu lista y si algun dia necesita de el Contactalo por algo esta alli .</h2> 
+              <ul>
+                      
+                  </ul>
+              </div>
+          </div>
+            
+          
+         
+   
+    <section class="blog-page">
+           
+           
+            <div class="container">
+               
+                <h2>Search</h2>
+                            <div class="input-group search-text">
+                              <input type="text" class="form-control search" placeholder="Search">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default btn-search" type="button"><i class="fa fa-search"></i></button>
+                              </span>
+                            </div>
+             <div class="social-post" *ngFor= "let heroe of heroes">
+                                <div><img src="/assets/images/agent4.jpg" class="social-img"></div>
+                                <div class="social-text" >
+                                    <h6><i class="fa fa-user mr-5"></i>{{heroes.nombre}} </h6>
+                                    <h5>{{heroe.tipoSangre}}</h5>
+                                    <span class="badge badge-pill badge-sucess">{{heroe.fechaPublicacion | date: 'dd-MMM'}}</span>
+                                    <div class="display-line sm-inline">
+                                        <a href="/detalle/{{heroe.id}}" class="blue-text">Ver mas Dato y Contactar</a>
+                                        <ul class="ml-auto social-icon">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        
+            
+                        
+            
+            
+        </div>
+        
+        
+    </section>
+    </div>
+    </div>
+    
+  

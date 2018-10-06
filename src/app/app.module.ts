@@ -29,6 +29,14 @@ import { HttpClientModule } from '@angular/common/http';
 /*import {FlashMessagesModule} from 'angular2-flash-messages';
 import {FlashMessagesService} from 'angular2-flash-messages';  colocar luego mensajes */
 
+//servicios
+import { InfoPaginaService} from './services/info-pagina.service';
+import { AuthService} from './services/auth.service';
+import {HeroesService} from './services/heroes.service';
+import { GuardGuard } from './guard/guard.guard';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +62,9 @@ import {FlashMessagesService} from 'angular2-flash-messages';  colocar luego men
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [InfoPaginaService, AuthService,
+     HeroesService, GuardGuard, AngularFirestore],
+  bootstrap: [AppComponent,
+     ]
 })
 export class AppModule { }

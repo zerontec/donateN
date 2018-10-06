@@ -1,3 +1,109 @@
-<p>
-  desbo works!
-</p>
+
+
+<div class="intro">
+    <div class="clear"></div>
+    <div id="page-content">
+            <hr>
+            <hr>
+           
+        <div class="container">
+            
+                <div class="jumbotron">
+                        <h2>Tu escritorio </h2> 
+                        
+                      </div>
+          
+          </div>
+          
+           
+          
+
+
+          <section class="blog-page">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-8">
+                          <div class="single-post">
+                                
+                              <div class="blog-img">
+                                  <a href="">
+                                      <img src="assets/images/slider-img1.jpg" class="img-responsive">
+                                  </a>
+                                  <div class="blog-icon"><img src="assets/images/icon2.png"></div>
+                              </div>
+
+       
+                              
+                    
+            
+       
+        
+   
+                              <section class="breadcrumb">
+                              <ul>
+                                    <li><input type="submit" class="btn-default" value="Heroes" /></li>
+                                    <li><input type="submit" class="btn-default" value="Tu Lista" /></li>
+                                    <li><input type="submit" class="btn-default" value="Pruebaa" /></li>
+                                </ul>
+                                </section>
+
+                              <h2 class="blog-title">Dona vida Ayuda a otros a Continuar conviertete en Heroe</h2>
+                          </div>
+                     
+                         Leave A C <!-- Leave comment -->
+                         
+                            <h3>Comparte en las redes Sociales ayuda a Llegar a mas Personas</h3>
+                      </div>
+                      
+                      
+                      <div class="col-sm-4">
+  
+                              <h2>Unete a la Lista de Donadores</h2>
+                              <div class="card">
+                                
+                                <div class="card body">
+                                  <form #formGuardar="ngForm" (ngSubmit)="onGuardarheroe(formGuardar)"action="">
+                                    <div class="form-group">
+                                      <label for="">Nombre</label>
+                                      <input type="text" class="form-control"  id="nombre" name="nombre" value=""
+                                      [(ngModel)]="heroes.nombre">
+                          
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email</label>
+                                        <input type="text"  class="form-control"  id="email" name="email" value="" 
+                                        [(ngModel)]="heroes.email">
+                                      </div>
+                          
+                                      <div class="form-group">
+                                          <label for="">Ciudad</label>
+                                          <input type="text"  class="form-control"  id="ciudad" name="ciudad" value="" 
+                                          [(ngModel)]="heroes.ciudad">
+                                        </div>
+                                       
+                                         
+                                            <div class="form-group">
+                                              <label for="tipoSangre">Tipo de Sangre</label>
+                                              <input  name="tipoSangre" id="tipoSangre" class="form-control"  
+                                              [(ngModel)]="heroes.tipoSangre">
+                                             
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="">Mensaje De Esperanza</label>
+                                                <textarea type="text" class="form-control"  id="mensaje" name="mensaje" value="" 
+                                                [(ngModel)]="heroes.mensaje"></textarea>
+                                              </div>
+                          <input type="submit" name="" value="Guardar" class="btn btn-primary btn-block">
+                          
+                                  </form>
+                          
+                                </div>
+                              </div>
+                            </div>
+                        
+                      
+                  </div>
+              </div>
+          </section>
+          
